@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lter-zak <lter-zak@student.42.fr>          +#+  +:+       +#+        */
+/*   By: manykhac <manykhac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 18:04:12 by lter-zak          #+#    #+#             */
-/*   Updated: 2022/11/16 17:03:58 by lter-zak         ###   ########.fr       */
+/*   Updated: 2022/11/26 12:24:36 by manykhac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char *get_next_line(int fd)
 			;
 	if (copy > main)
 	{
-		copy = 0;
+		*copy = 0;
 		return (main);
 	}
 	free(main);
